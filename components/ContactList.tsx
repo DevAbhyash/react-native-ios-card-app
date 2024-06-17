@@ -38,11 +38,13 @@ const ContactList = () => {
       <ScrollView style={styles.container} scrollEnabled={false}>
         {contacts.map(data => {
           return (
-            <view key={data.uid} style={styles.userCard}>
+            <View key={data.uid} style={styles.userCard}>
               <Image source={{uri: data.imageUrl}} style={styles.userImage} />
-              <Text style={styles.userName}>{data.name}</Text>
-              <Text style={styles.userStatus}>{data.status}</Text>
-            </view>
+              <View>
+                <Text style={styles.userName}>{data.name}</Text>
+                <Text style={styles.userStatus}>{data.status}</Text>
+              </View>
+            </View>
           );
         })}
       </ScrollView>
@@ -50,13 +52,40 @@ const ContactList = () => {
   );
 };
 
-export default ContactList;
-
 const styles = StyleSheet.create({
-  headingText: {},
-  container: {},
-  userCard: {},
-  userImage: {},
-  userName: {},
-  userStatus: {},
+  headingText: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    paddingHorizontal: 8,
+    color: 'white',
+  },
+  container: {
+    paddingHorizontal: 16,
+  },
+  userCard: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 3,
+    backgroundColor: 'purple',
+    padding: 8,
+    borderRadius: 14,
+    marginTop: 20,
+  },
+  userImage: {
+    width: 60,
+    height: 60,
+    borderRadius: 60 / 2,
+    marginRight: 14,
+  },
+  userName: {
+    fontSize: 16,
+    fontWeight: 600,
+    color: 'white',
+  },
+  userStatus: {
+    fontSize: 12,
+    color: 'white',
+  },
 });
+export default ContactList;

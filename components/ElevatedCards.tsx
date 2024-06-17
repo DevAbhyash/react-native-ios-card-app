@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     paddingHorizontal: 10,
+    color: 'white',
   },
   card: {
     flex: 1,

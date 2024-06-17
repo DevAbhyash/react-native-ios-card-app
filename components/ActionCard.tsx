@@ -25,7 +25,7 @@ function ActionCard() {
         style={styles.cardImage}
       />
       <View style={styles.bodyContainer}>
-        <Text>
+        <Text style={styles.texts}>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
           eligendi qui tempore nihil sapiente nesciunt iusto quis, porro eaque
           ut! Magni harum ad quo earum voluptatum reprehenderit dignissimos
@@ -59,6 +59,8 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     paddingHorizontal: 8,
+    color: 'white',
+    marginTop: 25,
   },
   elevatedCard: {
     backgroundColor: 'white',
@@ -87,6 +89,7 @@ const styles = StyleSheet.create({
   },
   bodyContainer: {
     padding: 10,
+    color: 'white',
   },
   footerContainer: {
     flexDirection: 'row',
@@ -96,11 +99,14 @@ const styles = StyleSheet.create({
   },
   socialLinks: {
     fontSize: 16,
-    color: 'white',
-    backgroundColor: 'black',
+    color: 'black',
+    backgroundColor: 'white',
     paddingHorizontal: 20,
     paddingVertical: 6,
     borderRadius: 6,
+  },
+  texts: {
+    color: 'white',
   },
 });
 

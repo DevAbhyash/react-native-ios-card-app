@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     paddingHorizontal: 8,
+    color: 'white',
   },
   card: {
     borderRadius: 6,
@@ -60,6 +61,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     paddingHorizontal: 12,
     marginBottom: 6,
+    color: 'white',
   },
   cardTitle: {
     color: 'black',
@@ -70,11 +72,13 @@ const styles = StyleSheet.create({
   cardLabel: {
     fontSize: 14,
     marginBottom: 6,
+    color: 'white',
   },
   cardDescription: {
     fontSize: 12,
     marginBottom: 12,
     marginTop: 6,
+    color: 'white',
   },
   cardFooter: {},
 });
